@@ -16,7 +16,7 @@ function Home({host}: {host: string}) {
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:title" content="The Gig Life" />
         <meta property="og:description" content="Join The Gig Life to get the most relevant news, politics, road stories and tips & tools related to the gig economy delivered to your inbox" />
-        <meta property="og:image" content={`${host}${OgImage}`} />
+        <meta property="og:image" content={`${host}${OgImage.src}`} />
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
