@@ -1,6 +1,6 @@
 import { ImageResponse } from '@vercel/og';
 import Image from 'next/image';
-import OgImage from '../public/og_image.png';
+import OgImage from '../../public/og_image.png';
 
 export const config = {
   runtime: 'edge',
