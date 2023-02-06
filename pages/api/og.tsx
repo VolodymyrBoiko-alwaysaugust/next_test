@@ -1,6 +1,6 @@
 import { ImageResponse } from '@vercel/og';
-// import Image from 'next/image';
-// import OgImage from '../public/og_image.png';
+import Image from 'next/image';
+import OgImage from '../public/og_image.png';
 
 export const config = {
   runtime: 'edge',
@@ -19,11 +19,10 @@ export default async function handler() {
           alignItems: 'center',
         }}
       >
-        {/* <Image
+        <Image
           src={OgImage}
           alt="image"
-        /> */}
-        Hello
+        />
       </div>
     ),
     {
