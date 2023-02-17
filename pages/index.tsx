@@ -4,6 +4,12 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import OgImage from '../public/og_image.png';
 
+import build1 from "../public/AugGetBuilding01.png";
+import build2 from "../public/AugGetBuilding02.png";
+import build3 from "../public/AugGetBuilding03.png";
+import build4 from "../public/AugGetBuilding04.png";
+import build5 from "../public/AugGetBuilding05.png";
+
 const inter = Inter({ subsets: ['latin'] })
 
 function Home({host}: {host: string}) {
@@ -16,6 +22,26 @@ function Home({host}: {host: string}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <Image
+          src={build1}
+          alt=""
+        />
+        <Image
+          src={build2}
+          alt=""
+        />
+        <Image
+          src={build3}
+          alt=""
+        />
+        <Image
+          src={build4}
+          alt=""
+        />
+        <Image
+          src={build5}
+          alt=""
+        />
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
