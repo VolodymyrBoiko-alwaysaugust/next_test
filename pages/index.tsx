@@ -3,12 +3,32 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import OgImage from '../public/og_image.png';
+import Slider from '../components/Slider'
 
 import build1 from "../public/AugGetBuilding01.png";
 import build2 from "../public/AugGetBuilding02.png";
 import build3 from "../public/AugGetBuilding03.png";
 import build4 from "../public/AugGetBuilding04.png";
 import build5 from "../public/AugGetBuilding05.png";
+
+// moves slider images
+import move1 from "../public/AugMoves01.png";
+import move2 from "../public/AugMoves02.png";
+import move3 from "../public/AugMoves03.png";
+import move4 from "../public/AugMoves04.png";
+import move5 from "../public/AugMoves05.png";
+// Juno slider images
+import juno1 from "../public/AugJuno01.png";
+import juno2 from "../public/AugJuno02.png";
+import juno3 from "../public/AugJuno03.png";
+import juno4 from "../public/AugJuno04.png";
+import juno5 from "../public/AugJuno05.png";
+// StonerCats slider images
+import StonerCats1 from "../public/AugStonerCats01.png";
+import StonerCats2 from "../public/AugStonerCats02.png";
+import StonerCats3 from "../public/AugStonerCats03.png";
+import StonerCats4 from "../public/AugStonerCats04.png";
+import StonerCats5 from "../public/AugStonerCats05.png";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,26 +42,10 @@ function Home({host}: {host: string}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Image
-          src={build1}
-          alt=""
-        />
-        <Image
-          src={build2}
-          alt=""
-        />
-        <Image
-          src={build3}
-          alt=""
-        />
-        <Image
-          src={build4}
-          alt=""
-        />
-        <Image
-          src={build5}
-          alt=""
-        />
+        <Slider images={[move1, move2, move3, move4, move5]} />
+        <Slider images={[juno1, juno2, juno3, juno4, juno5]} />
+        <Slider images={[build1, build2, build3, build4, build5]} />
+        <Slider images={[StonerCats1, StonerCats2, StonerCats3, StonerCats4, StonerCats5]} />
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;

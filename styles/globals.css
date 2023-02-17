@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -103,5 +107,34 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+.swiper-slide {
+  height: 324px !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #000 !important;
+  opacity: 1 !important;
+  width: 5px !important;
+  height: 5px !important;
+  margin-left: 5px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FB7997 !important;
+}
+
+.swiper-pagination-horizontal {
+  width: fit-content !important;
+  right: 0 !important;
+  left: unset !important;
+  bottom: -35px !important;
+}
+
+@media (max-width: 767px) {
+  .swiper-pagination-horizontal {
+    right: 10px !important;
   }
 }
