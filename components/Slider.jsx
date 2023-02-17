@@ -61,7 +61,7 @@ const Slider = ({images}) => {
       {images && images.map((image, index) => {
             return (
               <SwiperSlide key={index}>
-                <Image src={image} priority placeholder='blur'/>
+                <Image src={image} priority/>
               </SwiperSlide>
             );
           }
